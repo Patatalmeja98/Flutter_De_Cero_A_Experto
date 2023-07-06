@@ -21,6 +21,13 @@ class Hero {
    //   : name = pName,
    //   power = power;
 
+
+   @override
+   String toString() {
+     return '$name -$power';
+   }
+   
+
    
 
 
