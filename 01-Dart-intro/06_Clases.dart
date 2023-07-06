@@ -1,6 +1,6 @@
 void main () {
    
-   final Hero wolverine = Hero('logan','Regeneración');
+   final Hero wolverine = Hero(name'logan',power'Regeneración');
    print ( wolverine) ;
    print ( wolverine.name) ;
    print ( wolverine.power) ;
