@@ -8,7 +8,7 @@ void main () {
     
     
    print ("""
-   
+    perro con pata
    $pokemon
    $hp
    $isAlive
