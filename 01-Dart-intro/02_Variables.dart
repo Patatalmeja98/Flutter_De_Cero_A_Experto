@@ -6,6 +6,12 @@ void main () {
   final List<String> abilidades = ['culeada extrema'];
   final sprites = <String>['fotodeditto en tanga'];
     
+    //dynamic ==n null
+    dynamic errorMessage = 'hola';
+    errorMessage = true ;
+    errorMessage = [1,2,3,4,5,6];
+    errorMessage = {1,2,3,4,5,6};
+    errorMessage = null ;
     
    print ("""
    $pokemon
@@ -13,9 +19,7 @@ void main () {
    $isAlive
    $abilidades
    $sprites
-   
+   $errorMessage
    
    """);
-  
-  
 }
