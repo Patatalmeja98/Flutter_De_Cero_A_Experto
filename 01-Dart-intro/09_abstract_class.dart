@@ -3,7 +3,7 @@ void main(){
    final windPlant = WindPlant ( initialEnergy: 100);
    final nuclearPlant = NuclearPlant( energyleft: 1000);
 
-   print( ' wind: ${ chargePhone( winPlant)}');
+   print( ' wind: ${ chargePhone( windPlant)}');
    print( ' nuclear: ${chargePhone( nuclearPlant)}');
 
 }
