@@ -9,7 +9,7 @@ void main() async {
     final value = await httpGet(' https://fernando-herrera.com/cursos');
     print('exito: $value');
 
-  } on Exeption catch(err){
+  } on Exception catch(err){
     print('Tenemos una Exception: $err');
 
   } catch (err) {
