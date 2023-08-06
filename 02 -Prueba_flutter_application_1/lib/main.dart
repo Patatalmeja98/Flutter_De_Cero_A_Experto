@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.pink),
+        theme: ThemeData(
+            useMaterial3: true,
+            colorSchemeSeed: Color.fromARGB(255, 242, 12, 8)),
         home: const CounterFunctionsScreen());
   }
 }
