@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yes_no_app/presentation/widgets/chat/her_message_buuble.dart';
 import 'package:yes_no_app/presentation/widgets/chat/my_message_buble.dart';
 
 class ChatScreen extends StatelessWidget {
@@ -15,7 +16,7 @@ class ChatScreen extends StatelessWidget {
                 'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/07/hipertextual-conoce-fortuna-que-tenia-tony-stark-iron-man-universo-marvel-2020542291.jpg?fit=1920%2C1200&quality=50&strip=all&ssl=1'),
           ),
         ),
-        title: const Text(' mi mao da'),
+        title: const Text(' Tony Stark'),
         centerTitle: false,
       ),
       body: _ChatVew(),
@@ -35,11 +36,13 @@ class _ChatVew extends StatelessWidget {
               child: ListView.builder(
                 itemCount: 100,
                 itemBuilder: (context, index) {
-                  return const MyMessagebuble();
+                  return (index % 2 == 0)
+                      ? const HerMessageBuble()
+                      : const MyMessagebuble();
                 },
               ),
             ),
-            Text('MUNDO')
+            Text('rodrigo peji')
           ],
         ),
       ),
