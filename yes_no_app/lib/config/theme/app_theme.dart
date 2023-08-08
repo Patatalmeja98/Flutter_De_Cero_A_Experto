@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const Color _customColor = Color(0xFF5C11D4);
+const Color _customColor = Color.fromARGB(255, 246, 27, 2);
 
 const List<Color> _colothemes = [
   _customColor,
@@ -8,8 +8,8 @@ const List<Color> _colothemes = [
   Colors.teal,
   Colors.green,
   Colors.yellow,
-  Colors.orange,
-  Colors.pink,
+  Color.fromARGB(255, 20, 1, 63),
+  Color.fromARGB(255, 255, 11, 190),
 ];
 
 class AppTheme {

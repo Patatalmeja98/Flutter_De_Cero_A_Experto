@@ -16,7 +16,7 @@ class HerMessageBuble extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Text(
               'holi bro que quieres?',
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Color.fromARGB(255, 246, 245, 245)),
             ),
           ),
         ),
