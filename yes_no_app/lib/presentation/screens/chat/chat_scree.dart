@@ -52,7 +52,10 @@ class _ChatVew extends StatelessWidget {
             ),
 
             //caja de texto
-            const MessageFielBox(),
+            MessageFielBox(
+              // onValue: (value) => chatProvider.sendMessage(value),
+              onValue: chatProvider.sendMessage,
+            ),
           ],
         ),
       ),
