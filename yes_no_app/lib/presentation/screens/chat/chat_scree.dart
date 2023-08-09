@@ -45,8 +45,8 @@ class _ChatVew extends StatelessWidget {
                   final message = chatProvider.messagelist[index];
 
                   return (message.fromwho == Fromwho.hers)
-                      ? HerMessageBuble()
-                      : MyMessagebuble();
+                      ? const HerMessageBuble()
+                      : MyMessagebuble(message: message);
                 },
               ),
             ),
