@@ -1,10 +1,12 @@
+import 'package:dio/dio.dart';
 import 'package:yes_no_app/domain/entities/message.dart';
 
 class GetYesNoAnswer {
-  Future<Message> getAnswer() {
-    Future<MessageZ getAnswer(){
-return;
-}
-    
+  final _dio = Dio();
+
+  Future<Message> getAnswer() async {
+    final response = await _dio.get('https://yesno.wtf/api');
+
+    throw UnimplementedError();
   }
 }
