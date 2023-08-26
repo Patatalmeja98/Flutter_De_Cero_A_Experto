@@ -1,6 +1,6 @@
 
 
-import 'package:toktik/domain/video_post.dart';
+import 'package:toktik/domain/entities/video_post.dart';
 
 class LocalVideoModel{
   
@@ -16,7 +16,10 @@ class LocalVideoModel{
     this.views = 0
    });
 
-    factory LocalVideoModel.fromJsonMap(Map<String, dynamic> json) => LocalVideoModel(
+    factory LocalVideoModel.fromJsonMap(
+      Map<String, 
+      dynamic> json)
+       => LocalVideoModel(
         name: json['name'] ?? 'no name' ,
         videoUrl: json['videoUrl'],
         likes: json['likes'] ?? 0,
@@ -26,7 +29,7 @@ class LocalVideoModel{
       caption: name,
       videoUrl: videoUrl,
       likes: likes,
-      views: views,
+      views: views
       );         
              
    }
