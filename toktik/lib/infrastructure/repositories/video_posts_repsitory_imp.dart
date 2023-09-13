@@ -2,13 +2,13 @@ import 'package:toktik/domain/datasource/video_post_datasource.dart';
 import 'package:toktik/domain/entities/video_post.dart';
 import 'package:toktik/domain/repositories/video_post_repositori.dart';
 
-class VideoPostsRepository implements VideoPostRepository {
+class VideoPostsRepositoryImpl implements VideoPostRepository {
   final VideoPostDatasource videoPostDatasource;
 
-  VideoPostsRepository({required this.videoPostDatasource});
+  VideoPostsRepositoryImpl({required this.videoPostDatasource});
 
   @override
-  Future<List<VideoPost>> getFavoriteVideosByPage(String userID) {
+  Future<List<VideoPost>> getFavoriteVideosByUser(String userID) {
     throw UnimplementedError();
   }
 
